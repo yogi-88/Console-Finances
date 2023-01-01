@@ -103,3 +103,17 @@ for (let i =0 ; i < finances.length; i++) {
     netAmount += finances[i][1]    
 }
 console.log("Total: $"+netAmount)
+
+// The average of the changes in Profit/Losses over the entire period.
+let financeChanges = [];
+
+for (let j = 0; j < finances.length - 1 ; j++) {
+    // let profitLosses = finances[j][1]
+    financeChanges.push(finances[j+1][1] - finances[j][1])    
+}
+
+for (let k = 0; k < financeChanges.length; k++) {
+    totalchanges += financeChanges[k]
+}
+averageChange = Math.round(totalchanges / finances.length)
+console.log("Average  Change: $"+averageChange);
