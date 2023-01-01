@@ -33,6 +33,7 @@ Greatest Decrease in Profits: Sep-2013 ($-2196167)
 
 ### Screenshot
 
+![Console display of financial analysis](/assets/images/Screenshot%202023-01-01%20124626.png)
 
 ### Link to Deployed application
 
