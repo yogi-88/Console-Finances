@@ -89,8 +89,17 @@ var finances = [
 
 //pseudo code
 //heading of Analysis
-console.log("Financial Analysis")
+console.log("Financial Analysis");
 
 console.log("----------------------------")
 //The total number of months included in the dataset
-console.log("Total Months: " + finances.length)
+console.log("Total Months: " + finances.length);
+
+//The net total amount of Profit/Losses over the entire period.
+let netAmount = 0;
+let totalchanges = 0;
+let averageChange;
+for (let i =0 ; i < finances.length; i++) {
+    netAmount += finances[i][1]    
+}
+console.log("Total: $"+netAmount)
