@@ -38,6 +38,10 @@ Greatest Decrease in Profits: Sep-2013 ($-2196167)
 ### Link to Deployed application
 Page deployed at : https://yogi-88.github.io/Console-Finances/
 
+### Technologies Used
+HTML
+Javascript
+
 ####
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
 
