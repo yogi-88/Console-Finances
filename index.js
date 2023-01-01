@@ -114,18 +114,18 @@ for (let j = 0; j < finances.length - 1 ; j++) {
 for (let k = 0; k < financeChanges.length; k++) {
     totalchanges += financeChanges[k]
 }
-averageChange = Math.round(totalchanges / finances.length)
+averageChange = Math.round(totalchanges / (finances.length - 1))
 console.log("Average  Change: $"+averageChange);
 
 // The greatest increase in profits (date and time) over the entire period.
 let highestEarning;
 
 highestEarning = Math.max(...financeChanges);
-const maxIndex = financeChanges.indexOf(highestEarning);
+const maxIndex = financeChanges.indexOf(highestEarning) + 1;
 console.log("Greatest Increase in Profits: "+finances[maxIndex][0]+" "+"($"+highestEarning+")")
 
 // The lowest increase in profits (date and time) over the entire period.
 let lowestEarning;
 lowestEarning = Math.min(...financeChanges);
-const minIndex = financeChanges.indexOf(lowestEarning);
+const minIndex = financeChanges.indexOf(lowestEarning) + 1;
 console.log("Greatest Decrease in Profits: "+finances[minIndex][0]+" "+"($"+lowestEarning+")")
