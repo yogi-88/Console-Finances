@@ -108,7 +108,6 @@ console.log("Total: $"+netAmount)
 let financeChanges = [];
 
 for (let j = 0; j < finances.length - 1 ; j++) {
-    // let profitLosses = finances[j][1]
     financeChanges.push(finances[j+1][1] - finances[j][1])    
 }
 
@@ -117,3 +116,10 @@ for (let k = 0; k < financeChanges.length; k++) {
 }
 averageChange = Math.round(totalchanges / finances.length)
 console.log("Average  Change: $"+averageChange);
+
+// The greatest increase in profits (date and time) over the entire period.
+let highestEarning;
+
+highestEarning = Math.max(...financeChanges);
+const maxIndex = financeChanges.indexOf(highestEarning);
+console.log("Greatest Increase in Profits: "+finances[maxIndex][0]+" "+"($"+highestEarning+")")
