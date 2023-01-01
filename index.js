@@ -123,3 +123,9 @@ let highestEarning;
 highestEarning = Math.max(...financeChanges);
 const maxIndex = financeChanges.indexOf(highestEarning);
 console.log("Greatest Increase in Profits: "+finances[maxIndex][0]+" "+"($"+highestEarning+")")
+
+// The lowest increase in profits (date and time) over the entire period.
+let lowestEarning;
+lowestEarning = Math.min(...financeChanges);
+const minIndex = financeChanges.indexOf(lowestEarning);
+console.log("Greatest Decrease in Profits: "+finances[minIndex][0]+" "+"($"+lowestEarning+")")
